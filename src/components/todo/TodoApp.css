@@ -1,0 +1,421 @@
+/* General Light Background */
+body {
+  background: linear-gradient(
+    135deg,
+    #f5f5f5,
+    #eaeaea
+  ); /* Light gradient background */
+  color: #333; /* Dark text color for contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login Component Styling */
+.login {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f7f7f7
+  ); /* Light gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling for the login form */
+.login-form label {
+  font-weight: bold;
+  color: #555; /* Medium gray for labels */
+  margin-bottom: 5px; /* Add gap between label and input */
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  gap: 10px; /* Add gap between label and input */
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px;
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark text color */
+}
+
+.login-form input:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4caf50, #388e3c); /* Green gradient */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:disabled {
+  background: #ccc; /* Disabled button background */
+  cursor: not-allowed;
+}
+
+.login-form button:hover:not(:disabled) {
+  background: linear-gradient(
+    135deg,
+    #45a049,
+    #2e7d32
+  ); /* Darker green on hover */
+}
+
+.error {
+  color: #ff5252; /* Red for error messages */
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+/* General styling for the list-todos component */
+.list-todos {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.list-todos h1 {
+  font-size: 24px;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.list-todos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff; /* White table background */
+  color: #333; /* Dark text color */
+}
+
+.list-todos th,
+.list-todos td {
+  border: 1px solid #ddd; /* Light border */
+  padding: 8px;
+  text-align: left;
+}
+
+.list-todos th {
+  background: linear-gradient(
+    135deg,
+    #f5f5f5,
+    #eaeaea
+  ); /* Light gradient for table header */
+  color: #333; /* Dark text color */
+  font-weight: bold;
+  text-align: center;
+}
+
+.list-todos tr:nth-child(even) {
+  background-color: #f9f9f9; /* Slightly lighter row background */
+}
+
+.list-todos tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.list-todos td {
+  text-align: center; /* Center align for first and last child */
+}
+
+.list-todos td:nth-child(3) {
+  font-weight: bold; /* Bold text only for the last child */
+}
+
+.list-todos td:last-child span {
+  color: green;
+}
+
+.list-todos td:last-child span.no {
+  color: red;
+}
+/* Add spacing between buttons */
+.list-todos td button {
+  margin: 0 5px; /* Add spacing between buttons */
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, #333, #1e1e1e); /* Dark gradient */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #4caf50; /* Green on hover */
+}
+
+/* Footer Component Styling */
+.footer {
+  background: linear-gradient(135deg, #1e1e1e, #333); /* Dark gradient */
+  color: #ccc; /* Light gray text */
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Logout Component Styling */
+.logout {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f7f7f7
+  ); /* Light gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout h1 {
+  font-size: 28px;
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+.logout p {
+  font-size: 16px;
+  color: #555; /* Medium gray text */
+}
+
+/* Spinner overlay */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Spinner animation */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #000000; /* Green */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Delete Button Styling */
+.btn-danger {
+  background-color: #ff5252; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Add padding */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-danger:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.btn-danger:active {
+  background-color: #d32f2f; /* Even darker red when clicked */
+  transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+.btn-danger:disabled {
+  background-color: #f5f5f5; /* Light gray for disabled state */
+  color: #aaa; /* Gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Update Button Styling */
+.btn-success {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Add padding */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-success:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-success:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+  transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+.btn-success:disabled {
+  background-color: #f5f5f5; /* Light gray for disabled state */
+  color: #aaa; /* Gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Todo Form Styling */
+.todo-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+.todo-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-form .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.todo-form button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-form button.btn-secondary {
+  background: #ccc;
+  color: #333;
+}
+
+.todo-form button:hover {
+  background: linear-gradient(135deg, #45a049, #2e7d32);
+}
+
+/* Create New Todo Button Styling */
+.create-todo-button-container {
+  margin-top: 20px; /* Add spacing above the button */
+  text-align: center; /* Center the button */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-primary:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+.btn-primary:disabled {
+  background-color: #f5f5f5; /* Light gray for disabled state */
+  color: #aaa; /* Gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
